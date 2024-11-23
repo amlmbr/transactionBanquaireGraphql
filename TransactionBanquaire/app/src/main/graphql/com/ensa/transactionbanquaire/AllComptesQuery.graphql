@@ -1,0 +1,8 @@
+query AllComptes {
+  allComptes {
+    id
+    solde
+    type
+    dateCreation
+  }
+}

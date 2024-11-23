@@ -1,0 +1,28 @@
+type Compte {
+    id: ID!
+    solde: Float!
+    type: String!
+    dateCreation: String!
+}
+
+type Transaction {
+    id: ID!
+    compteId: ID!
+    montant: Float!
+    type: String!
+    date: String!
+}
+
+type Mutation {
+    addTransaction(compteId: ID!, montant: Float!, type: String!): Transaction!
+}
+
+type TransactionResponse {
+    success: Boolean!
+    message: String
+}
+
+type Query {
+    allComptes: [Compte!]!
+    compte(id: ID!): Compte
+}

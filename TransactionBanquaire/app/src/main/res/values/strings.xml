@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TransactionBanquaire</string>
+    <string name="graphql_url">http://192.168.11.192:8080/graphql</string>
+    <string name="hint_montant">Montant</string>
+
+    <string-array name="compte_types">
+        <item>EPARGNE</item>
+        <item>COURANT</item>
+    </string-array>
+    <string-array name="transaction_types">
+        <item>DEPOT</item>
+        <item>RETRAIT</item>
+    </string-array>
+
+
+</resources>
